@@ -49,17 +49,18 @@
       </p>
 
       <div class="row g-4">
-        <!-- Movies / Going Places -->
+        <!-- Going out / Movies / Events -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100">
+            <!-- Use one of your stadium / game / night-out photos as movies.jpg -->
             <img src="img/movies.jpg" class="card-img-top"
-                 alt="Movie theater seats and screen">
+                 alt="View from the stands at a game or event">
             <div class="card-body">
-              <h2 class="h5 card-title">Going Out &amp; Movies</h2>
+              <h2 class="h5 card-title">Going Out &amp; Events</h2>
               <p class="card-text">
-                I enjoy going places and doing things like catching a movie or trying new spots
-                around town. It’s a good way to relax, reset, and keep life from feeling too
-                repetitive.
+                I enjoy going places and doing things like catching a game or a movie and trying
+                new spots around town. It’s a good way to relax, reset, and keep life from feeling
+                too repetitive.
               </p>
             </div>
           </div>
@@ -68,8 +69,9 @@
         <!-- Walking dogs -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100">
+            <!-- Use one of your dog photos as dogs.jpg -->
             <img src="img/dogs.jpg" class="card-img-top"
-                 alt="Dog on a walk outside">
+                 alt="My dogs relaxing outside">
             <div class="card-body">
               <h2 class="h5 card-title">Walking My Dogs</h2>
               <p class="card-text">
@@ -83,8 +85,9 @@
         <!-- Sports & Gaming (PS5) -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100">
+            <!-- Use a sports photo (like a Bengals game) as sports.jpg -->
             <img src="img/sports.jpg" class="card-img-top"
-                 alt="Friends playing sports and relaxing with video games">
+                 alt="Crowd at a football game">
             <div class="card-body">
               <h2 class="h5 card-title">Sports &amp; Gaming</h2>
               <p class="card-text">
@@ -99,8 +102,9 @@
         <!-- Trips -->
         <div class="col-md-6 col-lg-3">
           <div class="card h-100">
+            <!-- Use one of your city / travel night shots as trips.jpg -->
             <img src="img/trips.jpg" class="card-img-top"
-                 alt="Scenic view from a trip or travel destination">
+                 alt="City skyline at night while traveling">
             <div class="card-body">
               <h2 class="h5 card-title">Going on Trips</h2>
               <p class="card-text">
@@ -117,4 +121,17 @@
 
   <!-- FOOTER -->
   <footer class="bg-dark text-light py-3 mt-auto">
-    <div class="c
+    <div class="container text-center">
+      <small>&copy; <span id="year"></span> Jamell Fields. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // auto-update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
